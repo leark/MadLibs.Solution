@@ -3,17 +3,25 @@
 
 <head>
   <meta charset='utf-8'>
-  <title>Create a Custom Postcard!</title>
+  <title>Create a Custom Mad Lib!</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: beige;
+    }
+  </style>
 </head>
 
 <body>
-  <p>@Model.Noun1 ate some @Model.Adjective1 cookies.</p>
-  <p>@Model.Noun1 @Model.Adverb1 reached for a 2nd cookie.</p>
-  <p>@Model.Noun2 said "@Model.Noun1 , what are you doing? Don't you know @Model.Adjective1 cookies are 1 per person
-    only?"</p>
-  <p>@Model.Adjective2 cookies are the better ones to have more than 1 and eat @Model.Adverb2 !!</p>
+  <div class="container">
+    <p>@Model.Noun1 ate some @Model.Adjective1 cookies.</p>
+    <p>@Model.Noun1 @Model.Adverb1 reached for a 2nd cookie.</p>
+    <p>@Model.Noun2 said "@Model.Noun1 , what are you doing? Don't you know @Model.Adjective1 cookies are 1 per person
+      only?"</p>
+    <p>@Model.Adjective2 cookies are the better ones to have more than 1 and eat @Model.Adverb2 !!</p>
+    <p>@Model.Noun1 asked @Model.Noun2 , "How many cookies should you eat?" @Model.Noun2 said @Model.Number1 !! </p>
+  </div>
 </body>
 
 </html>
